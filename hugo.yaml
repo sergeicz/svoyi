@@ -1,7 +1,7 @@
 baseURL: ''
-title: TailBliss
-languageCode: en-us
-DefaultContentLanguage: en
+title: Барбершоп СВОИ
+languageCode: ru
+DefaultContentLanguage: ru
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
@@ -47,11 +47,11 @@ markup:
       xhtml: false
 
 params:
-  author: Nusser Studios
+  author: Свои
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
+  moto: "Мужские стрижки"
+  description: "Сочи, Нагорная 23"
   disable_theme_toggle: false
   disable_stay_uptodate: false
 
@@ -98,16 +98,16 @@ params:
 
   social_media:
     github:
-      enabled: true
+      enabled: false
       url: 'https://github.com/nusserstudios'
     facebook:
-      enabled: true
+      enabled: false
       url: 'https://facebook.com/nusserstudios'
     instagram:
-      enabled: true
+      enabled: false
       url: 'https://instagram.com/nusserstudios'
     twitter:
-      enabled: true
+      enabled: false
       url: 'https://twitter.com/nusserstudios'
     
 
@@ -162,26 +162,12 @@ menu:
       url: "#"
       weight: 30
   footer:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
-      weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+  - identifier: Политика конфиденциальности
+    name: Политика конфиденциальности
+    url: "#"
+    weight: 10
+
+
 
 markup:
   goldmark:
