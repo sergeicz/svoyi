@@ -1,4 +1,4 @@
-baseURL: 'https://svoyi.netlify.app'
+baseURL: '#'
 title: Барбершоп СВОИ
 languageCode: ru
 DefaultContentLanguage: ru
@@ -48,7 +48,7 @@ markup:
 
 params:
   author: Свои
-  authorimage: ../assets/images/global/author.webp
+  authorimage: /assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
   moto: "Мужские стрижки"
   description: "Сочи, Нагорная 23"
