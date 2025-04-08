@@ -110,7 +110,7 @@ menu:
   footer:
   - identifier: Политика конфиденциальности
     name: Политика конфиденциальности
-    url: "#"
+    url: "/policy/"
     weight: 10
 
 
