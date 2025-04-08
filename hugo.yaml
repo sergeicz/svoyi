@@ -49,7 +49,7 @@ markup:
 params:
   author: Свои
   authorimage: /assets/images/global/author.webp
-  og_image: /images/tailbliss-cover.png
+  og_image: /images/tailbliss-cover.webp
   moto: "Мужские стрижки"
   description: "Сочи, Нагорная 23"
   disable_theme_toggle: false
