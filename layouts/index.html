@@ -130,18 +130,32 @@
                     <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
                 </svg>
             </div>
-            <!-- Video container -->
-            <div class="relative pl-4 sm:pl-0 -mr-40 sm:-mr-0 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-                <div class="relative w-full max-w-[90vw] mx-auto overflow-hidden rounded-[20px] shadow-xl" style="aspect-ratio: 16 / 9;">
-                    <video class="absolute top-0 left-0 w-full h-full object-contain rounded-[20px]" style="border-radius: 20px;" controls>
+            <div class="relative sm:mx-0 sm:max-w-full sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
+                <div class="relative w-full max-w-full mx-auto pt-[56.25%] overflow-hidden rounded-[20px] shadow-xl">
+                    <video class="absolute top-0 left-0 w-full h-full object-contain rounded-[20px]" controls>
                         <source src="/video/sv.mp4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+            
+            <style>
+                /* Для экранов меньше 640px */
+                @media (max-width: 640px) {
+                    .relative {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+            
+                    .relative video {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain; /* Сохраняет пропорции видео */
+                    }
+                }
+            </style>
+            
+            
     <!-- Sponsors section -->
     <div class="max-w-md px-4 mx-auto md:pt-24 md:pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
