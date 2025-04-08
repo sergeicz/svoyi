@@ -1,33 +1,32 @@
+
 ---
 title: "Наши цены"
 draft: false
 language: ru
 featured_image: ../assets/images/featured/featured-img-placeholder.png
-summary: Оьображается на главной
+summary: Отображается на главной
 description: Не отображается на главной
 authorimage: static/images/site-logo.png
 categories: 
 ---
-__Advertisement :smile:__
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+__Реклама :smile:__
 
-You will like those projects!
+- __[pica](https://nodeca.github.io/pica/demo/)__ - высококачественное и быстрое изменение размера изображений в браузере.
+- __[babelfish](https://github.com/nodeca/babelfish/)__ - удобный для разработчиков i18n с поддержкой множественного числа и легким синтаксисом.
+
+Вам понравятся эти проекты!
 
 ---
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# Заголовок первого уровня :blush:
+## Заголовок второго уровня
+### Заголовок третьего уровня
+#### Заголовок четвёртого уровня
+##### Заголовок пятого уровня
+###### Заголовок шестого уровня
 
-
-## Horizontal Rules
+## Горизонтальные линии
 
 ***
 
@@ -35,10 +34,9 @@ You will like those projects!
 
 ___
 
+## Типографические замены
 
-## Typographic replacements
-
-Enable typographer option to see result.
+Включите опцию типографа, чтобы увидеть результат.
 
 (c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
@@ -46,77 +44,70 @@ test.. test... test..... test?..... test!....
 
 !!!!!! ???? ,,  -- ---
 
-"Smartypants, double quotes" and 'single quotes'
+"Smartypants, двойные кавычки" и 'одинарные кавычки'
 
+## Выделение
 
-## Emphasis
+**Это жирный текст**
 
-**This is bold text**
+__Это жирный текст__
 
-__This is bold text__
+*Это курсивный текст*
 
-*This is italic text*
+_Это курсивный текст_
 
-_This is italic text_
+~~Зачеркнутый текст~~
 
-~~Strikethrough~~
+## Цитаты
 
+> Цитаты могут быть также вложены...
+>> ...используя дополнительные знаки больше справа друг от друга...
+> > > ...или с пробелами между стрелками.
 
-## Blockquotes
+## Списки
 
+Неупорядоченные
 
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
++ Создайте список, начиная строку с `+`, `-` или `*`
++ Подсписки создаются путем отступа на 2 пробела:
+  - Смена маркера заставляет начать новый список:
     * Ac tristique libero volutpat at
     + Facilisis in pretium nisl aliquet
     - Nulla volutpat aliquam velit
-+ Very easy!
++ Очень просто!
 
-Ordered
+Упорядоченные
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
+1. Вы можете использовать последовательные номера...
+1. ...или оставить все номера как `1.`
 
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
+Начать нумерацию с отступа:
 
 57. foo
 1. bar
 
+## Код
 
-## Code
+Встроенный `код`
 
-Inline `code`
+Отступленный код
 
-Indented code
+    // Некоторые комментарии
+    строка 1 кода
+    строка 2 кода
+    строка 3 кода
 
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
+Блок кода "ограждения"
 
 ```
-Sample text here...
+Пример текста здесь...
 ```
 
-Syntax highlighting
+Подсветка синтаксиса
 
 ``` js
 var foo = function (bar) {
@@ -126,130 +117,119 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
-## Tables
+## Таблицы
 
-| Option | Description |
+| Опция  | Описание |
 | ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| data   | путь к файлам данных, которые будут переданы в шаблоны. |
+| engine | движок, который будет использоваться для обработки шаблонов. По умолчанию используется Handlebars. |
+| ext    | расширение, которое будет использоваться для файлов назначения. |
 
-Right aligned columns
+Таблицы с выравниванием по правому краю
 
-| Option | Description |
+| Опция  | Описание |
 | ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| data   | путь к файлам данных, которые будут переданы в шаблоны. |
+| engine | движок, который будет использоваться для обработки шаблонов. По умолчанию используется Handlebars. |
+| ext    | расширение, которое будет использоваться для файлов назначения. |
 
+## Ссылки
 
-## Links
+[текст ссылки](http://dev.nodeca.com)
 
-[link text](http://dev.nodeca.com)
+[ссылка с заголовком](http://nodeca.github.io/pica/demo/ "текст заголовка!")
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+Автоматически преобразованная ссылка https://github.com/nodeca/pica (включите linkify для отображения)
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+## Изображения
 
+![Миньон](https://octodex.github.com/images/minion.png)
+![Штурмтропер-кот](https://octodex.github.com/images/stormtroopocat.jpg "Штурмтропер-кот")
 
-## Images
+Как и ссылки, изображения также могут использовать синтаксис с сносочными примечаниями
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Текст alt][id]
 
-Like links, Images also have a footnote style syntax
+С ссылкой, определяющей местоположение URL в другом месте документа:
 
-![Alt text][id]
+[id]: https://octodex.github.com/images/dojocat.jpg  "Доджокот"
 
-With a reference later in the document defining the URL location:
+## Плагины
 
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+Убийственная особенность `markdown-it` - это эффективная поддержка
+[синтаксических плагинов](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
 
+### [Эмодзи](https://github.com/markdown-it/markdown-it-emoji)
 
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+> Классическая разметка: :wink: :crush: :cry: :tear: :laughing: :yum:
 >
-> Shortcuts (emoticons): :-) :-( 8-) ;)
+> Сокращения (эмотиконы): :-) :-( 8-) ;)
 
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+смотрите [как изменить вывод](https://github.com/markdown-it/markdown-it-emoji#change-output) с помощью twemoji.
 
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+### [Подстрочный](https://github.com/markdown-it/markdown-it-sub) / [Надстрочный](https://github.com/markdown-it/markdown-it-sup)
 
 - X^2^
 - H~2~O
 
-
 ### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
-++Inserted text++
-
+++Вставленный текст++
 
 ### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
 
-==Marked text==
+==Выделенный текст==
 
+### [Сноски](https://github.com/markdown-it/markdown-it-footnote)
 
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+Сноска 1 ссылка[^first].
 
-Footnote 1 link[^first].
+Сноска 2 ссылка[^second].
 
-Footnote 2 link[^second].
+Встроенная сноска^[Текст встроенной сноски] определение.
 
-Inline footnote^[Text of inline footnote] definition.
+Дублированная ссылка на сноску[^second].
 
-Duplicated footnote reference[^second].
+[^first]: Сноска **может содержать разметку**
 
-[^first]: Footnote **can have markup**
+    и несколько параграфов.
 
-    and multiple paragraphs.
+[^second]: Текст сноски.
 
-[^second]: Footnote text.
+### [Списки определений](https://github.com/markdown-it/markdown-it-deflist)
 
+Термин 1
 
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+:   Определение 1
+с ленивым продолжением.
 
-Term 1
+Термин 2 с *встроенной разметкой*
 
-:   Definition 1
-with lazy continuation.
+:   Определение 2
 
-Term 2 with *inline markup*
+        { некоторый код, часть Определения 2 }
 
-:   Definition 2
+    Третий параграф определения 2.
 
-        { some code, part of Definition 2 }
+_Компактный стиль:_
 
-    Third paragraph of definition 2.
+Термин 1
+  ~ Определение 1
 
-_Compact style:_
+Термин 2
+  ~ Определение 2a
+  ~ Определение 2b
 
-Term 1
-  ~ Definition 1
+### [Сокращения](https://github.com/markdown-it/markdown-it-abbr)
 
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
+Это пример HTML-сокращений.
 
+Он преобразует "HTML", но оставляет нетронутыми частичные записи, такие как "xxxHTMLyyy" и так далее.
 
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+*[HTML]: Языковая разметка гипертекста
 
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+### [Пользовательские контейнеры](https://github.com/markdown-it/markdown-it-container)
 
 ::: warning
-*here be dragons*
+*здесь будут драконы*
 :::
-
