@@ -13,6 +13,24 @@
                     <p class="max-w-xl mx-auto mb-6 font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
                         {{ .Site.Params.Description}}
                     </p>
+                    <div class="yandex-rating-container flex justify-center lg:justify-start space-x-4">
+                        <!-- Виджет Яндекс.Справочника -->
+                        <iframe 
+                            id="yandex-rating-iframe" 
+                            src="https://yandex.ru/sprav/widget/rating-badge/8044630477?type=award&theme=dark" 
+                            width="150" 
+                            height="50" 
+                            frameborder="0">
+                        </iframe>
+                    
+                        <!-- Виджет 2ГИС -->
+                        <iframe 
+                            src="https://widget.2gis.ru/api/widget?org_id=70000001050683795&amp;branch_id=70000001050683796&amp;size=medium&amp;theme=dark" 
+                            width="150" 
+                            height="50" 
+                            frameborder="0">
+                        </iframe>
+                    </div>
                 </div>
                 <div class="col-span-6">
                     {{ $hero := resources.GetMatch "images/pages/tailbliss-rocket-indigo.webp" }}
