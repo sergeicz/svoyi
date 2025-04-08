@@ -3424,6 +3424,16 @@ video {
   color: rgb(24 24 27 / var(--tw-text-opacity, 1));
 }
 
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .text-opacity-40 {
   --tw-text-opacity: 0.4;
 }
@@ -4129,6 +4139,11 @@ EmojiSymbols;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-indigo-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 48 163 / var(--tw-text-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -4320,6 +4335,11 @@ EmojiSymbols;
   color: rgb(228 228 231 / var(--tw-text-opacity, 1));
 }
 
+.dark\:text-indigo-400:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+}
+
 .dark\:placeholder-gray-400:is(.dark *)::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
@@ -4355,6 +4375,11 @@ EmojiSymbols;
 }
 
 .dark\:hover\:text-primary-500:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity, 1));
+}
+
+.dark\:hover\:text-indigo-500:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity, 1));
 }
@@ -4649,6 +4674,14 @@ EmojiSymbols;
 
   .lg\:top-12 {
     top: 3rem;
+  }
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
   }
 
   .lg\:mx-0 {
