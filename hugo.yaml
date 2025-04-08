@@ -112,6 +112,10 @@ menu:
     name: Политика конфиденциальности
     url: "/policy/"
     weight: 10
+    - identifier: Оферта
+    name: Оферта
+    url: "/offer/"
+    weight: 20
 
 
 
