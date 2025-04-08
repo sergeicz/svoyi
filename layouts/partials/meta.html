@@ -1,16 +1,15 @@
-<title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
-    {{else}} {{ .Title }} | {{ .Site.Title }} {{end}}
-</title>
+<title>{{ .Title }} | Барбершоп СВОИ</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta property="og:title" content="Барбершоп СВОИ | Сочи | Нагорная 23" />
-<meta name="twitter:title" content="Барбершоп СВОИ | Сочи | Нагорная 23" />
-<meta itemprop="name" content="Барбершоп СВОИ | Сочи | Нагорная 23" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta property="og:description"
-      content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-<meta property="og:site_name" content="{{ .Site.Title }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:locale" content="ru">
+
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ .Title }} | Барбершоп СВОИ" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
 <meta property="og:image" content="https://svoyi.ru/images/tailbliss-cover.webp" />
-<meta property="og:image:secure_url" content="https://svoyi.ru/images/tailbliss-cover.webp" />
-<meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
+<meta property="og:url" content="https://svoyi.ru{{ .RelPermalink }}" />
+<meta property="og:site_name" content="Барбершоп СВОИ" />
+<meta property="og:locale" content="ru" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ .Title }} | Барбершоп СВОИ" />
+<meta name="twitter:description" content="{{ .Site.Params.description }}" />
+<meta name="twitter:image" content="https://svoyi.ru/images/tailbliss-cover.webp" />
