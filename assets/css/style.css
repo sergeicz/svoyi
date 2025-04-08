@@ -2863,6 +2863,10 @@ video {
   max-width: 90%;
 }
 
+.max-w-\[90vw\] {
+  max-width: 90vw;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -4468,6 +4472,10 @@ EmojiSymbols;
     margin-top: 1rem;
   }
 
+  .sm\:-mr-0 {
+    margin-right: -0px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -4521,6 +4529,10 @@ EmojiSymbols;
 
   .sm\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0px;
   }
 
   .sm\:text-2xl {
