@@ -90,7 +90,7 @@ params:
   p5:
     heading: "Мы на карте"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
+      - text: "Мы находимся в Центральном районе Сочи между остановками 'Театральная' и 'Гостиница Сочи', на 2-й линии за отелем Магнолия."
     action: "#"
     label: "Email address"
     placeholder: "Enter your email"

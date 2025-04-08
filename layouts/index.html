@@ -268,34 +268,36 @@
                 </svg>
             </div>
             <div class="relative">
-                <div class="sm:text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <div class="flex flex-col items-center text-center">
+                    <h2 class="text-xl font-bold tracking-tight text-white sm:text-2xl">
                         {{ .Site.Params.P5.Heading }}
                     </h2>
                     {{ range .Site.Params.P5.Content }}
-                    <p class="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
+                    <p class="max-w-2xl mt-4 text-base text-primary-100">
                         {{ .text }}
                     </p>
                     {{ end }}
+            
+                    <!-- Карта -->
+                    <div class="mt-6 w-full flex justify-center">
+                        <iframe src="https://yandex.ru/map-widget/v1/?z=15&ol=biz&oid=8044630477"
+                            width="100%" height="300" frameborder="0"
+                            style="max-width: 560px; border-radius: 30px;"></iframe>
+                    </div>
+            
+                    <!-- Кнопка -->
+                    <div class="mt-6">
+                        <a href="https://yandex.ru/maps/?ll=39.730917%2C43.577090&rtd=0&rtext=~43.577090%2C39.730917&rtt=auto&ruri=~&start_navigation=true&z=14&from=mapframe"
+                            target="_blank">
+                            <button type="button"
+                                class="px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+                                Построить маршрут
+                            </button>
+                        </a>
+                    </div>
                 </div>
-<!-- Map iframe with rounded corners -->
-<div class="mt-6 sm:mx-auto sm:flex sm:max-w-lg mb-6">
-    <iframe src="https://yandex.ru/map-widget/v1/?z=15&ol=biz&oid=8044630477" width="100%" height="300" frameborder="0" style="max-width: 560px; margin: 0 auto; border-radius: 30px;"></iframe>
-</div>
-
-<!-- Button with margin-top -->
-<div class="mt-4 sm:mt-0 sm:ml-3 text-center">
-    <a href="https://yandex.ru/maps/?ll=39.730917%2C43.577090&rtd=0&rtext=~43.577090%2C39.730917&rtt=auto&ruri=~&start_navigation=true&z=14&from=mapframe" target="_blank">
-        <button type="button" class="px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
-            Построить маршрут
-        </button>
-    </a>
-</div>
-
             </div>
-        </div>
-    </div>
-</div>
+            
 
     {{ end }}
 
