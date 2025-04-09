@@ -11,18 +11,31 @@
 
     <!-- Подключение шрифтов с font-display: swap (если есть шрифты) -->
     <link rel="stylesheet" href="/assets/css/fonts.css">
+
+    <!-- Минимизация и асинхронная загрузка CSS и JS для улучшения производительности -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/styles.min.css" media="all">
 </head>
 
 <body class="bg-zinc-100 dark:bg-gray-800">
     {{ partial "nav.html" . }}
+    
+    <!-- Пример использования lazy load для изображений -->
+    <img src="{{ .Site.BaseURL }}assets/images/pages/our-mission.webp" alt="Наши цели" loading="lazy" class="w-full h-auto">
+    <img src="{{ .Site.BaseURL }}assets/images/pages/hacktoberfest.jpg" alt="Хакатон" loading="lazy" class="w-full h-auto">
+    <img src="{{ .Site.BaseURL }}assets/images/pages/tailbliss-rocket-indigo.webp" alt="Тейлблисс Ракетный Индий" loading="lazy" class="w-full h-auto">
+
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
 
-    <!-- Скрипт darkmode.js с defer -->
+    <!-- Скрипт darkmode.js с defer для асинхронной загрузки -->
     <script src="/assets/js/darkmode.js" defer></script>
 
     <!-- Пример асинхронной загрузки других скриптов -->
     <script src="/assets/js/other-script.js" async></script>
+
+    <!-- Пример отложенной загрузки других менее критичных скриптов -->
+    <script src="/assets/js/non-critical.js" defer></script>
+
 </body>
 
 </html>
