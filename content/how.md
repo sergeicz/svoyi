@@ -36,7 +36,7 @@ draft: false
 
 - **[Hugo](https://gohugo.io/)** — как движок.
 - **[GitHub](https://github.com/)** — для хранения файлов.
-- **[Cloudflare](https://www.cloudflare.com/)** — для деплоя  сайта в pages и защиты от атак.
+- **[Cloudflare](https://www.cloudflare.com/)** — для деплоя сайта в pages и безопасности.
 
  *Все инструменты абсолютно бесплатные* 
  
@@ -44,7 +44,7 @@ draft: false
 
 ## 4. Продакшн
 
-Развернуть сайт на **Cloudflare** было самой простой частью работы. Всё, что было нужно было — это связать репозиторий с проектом на GitHub, и при новой редакции фалов сайт автоматически разворачивается ,а  обновления применяются моментально.
+Развернуть сайт на **Cloudflare** было самой простой частью работы. Всё, что было нужно было — это связать репозиторий с проектом на GitHub и при новой редакции фалов сайт автоматически разворачивается ,а  обновления применяются моментально.
 
 Далее я настроил DNS, для управления трафиком и защиты сайта от атак. Мы запретили пользователем из нескольких стран доступ на сайт. 
 
@@ -57,7 +57,7 @@ draft: false
 
 
 <div class="max-w-screen-md px-4 mx-auto">
-      <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Если вдруг вам нужно создать сайт с такими же характеристиками, не стесняйтесь обращаться. Я с радостью помогу вам выбрать правильные инструменты и настроить всё по вашему запросу</p> 
+      <h3 class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">Если вдруг вам нужно создать сайт с такими же характеристиками, не стесняйтесь обращаться. Я с радостью помогу вам выбрать правильные инструменты и настроить всё по вашему запросу</h3> 
       <div class="text-center mb-8">
           <a href="https://t.me/feedback_svr_bot">
               <button type="button" class="px-5 py-3 font-bold text-center text-white bg-indigo-600 rounded-lg text-md sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">
