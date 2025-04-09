@@ -8,15 +8,21 @@
     <link rel="preload" as="image" href="{{ .Site.BaseURL }}assets/images/pages/our-mission.webp">
     <link rel="preload" as="image" href="{{ .Site.BaseURL }}assets/images/pages/hacktoberfest.jpg">
     <link rel="preload" as="image" href="{{ .Site.BaseURL }}assets/images/pages/tailbliss-rocket-indigo.webp">
+
+    <!-- Подключение шрифтов с font-display: swap (если есть шрифты) -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
 </head>
 
 <body class="bg-zinc-100 dark:bg-gray-800">
     {{ partial "nav.html" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
-    
+
     <!-- Скрипт darkmode.js с defer -->
     <script src="/assets/js/darkmode.js" defer></script>
+
+    <!-- Пример асинхронной загрузки других скриптов -->
+    <script src="/assets/js/other-script.js" async></script>
 </body>
 
 </html>
