@@ -20,9 +20,9 @@
     {{ partial "nav.html" . }}
     
     <!-- Пример использования lazy load для изображений -->
-    <img src="{{ .Site.BaseURL }}assets/images/pages/our-mission.webp" alt="Наши цели" loading="lazy" class="w-full h-auto">
-    <img src="{{ .Site.BaseURL }}assets/images/pages/hacktoberfest.jpg" alt="Хакатон" loading="lazy" class="w-full h-auto">
-    <img src="{{ .Site.BaseURL }}assets/images/pages/tailbliss-rocket-indigo.webp" alt="Тейлблисс Ракетный Индий" loading="lazy" class="w-full h-auto">
+    <img src="{{ .Site.BaseURL }}assets/images/pages/our-mission.webp" loading="lazy" class="w-full h-auto">
+    <img src="{{ .Site.BaseURL }}assets/images/pages/hacktoberfest.jpg"  loading="lazy" class="w-full h-auto">
+    <img src="{{ .Site.BaseURL }}assets/images/pages/tailbliss-rocket-indigo.webp" loading="lazy" class="w-full h-auto">
 
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
