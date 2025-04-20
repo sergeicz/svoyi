@@ -41,21 +41,15 @@
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
                         {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
-                        <!-- Номер телефона -->
-                        <div class="mt-4 flex justify-center space-x-4">
-                            <!-- Кнопка Телефона -->
-                            <a href="tel:+79996565446" 
-                               class="inline-flex items-center justify-center h-[64px] px-6 py-4 text-lg font-bold text-white bg-gray-900 rounded-lg shadow-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-gray-800 dark:hover:bg-gray-700">
-                                +7 (999) 656-54-46
-                            </a>
-                        
-                            <!-- Кнопка Telegram -->
-                            <a href="https://tinyurl.com/tgoth" target="_blank"
-   class="inline-flex items-center justify-center h-[64px] px-6 py-4 text-lg font-bold text-white bg-gray-900 rounded-lg shadow-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <i class="fab fa-telegram-plane text-white text-xl"></i>&nbsp;TG канал
-</a>
-
-
+                        <div class="mt-4 flex flex-wrap justify-center space-y-4 sm:space-x-4 sm:space-y-0">
+                            <div class="mt-4 flex flex-wrap justify-center space-x-4 space-y-4 sm:space-x-4 sm:space-y-0">
+                                <!-- Кнопка Телефона -->
+                                <a href="tel:+79996565446" 
+                                   class="inline-flex items-center justify-center h-[64px] px-6 py-4 text-lg font-bold text-white bg-gray-900 rounded-lg shadow-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                    +7 (999) 656-54-46
+                                </a>
+                            
+                                                           
                         </div>
                                             </div>
             </div>
