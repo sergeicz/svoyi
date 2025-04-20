@@ -137,33 +137,50 @@
         </div>
     </div>
 
+    {{ if not .Site.Params.Disable_stay_uptodate}}
     <!-- CTA section -->
-    {{ if not .Site.Params.Disable_stay_uptodate }}
     <div class="relative pb-16 mt-6">
         <div class="max-w-md mx-auto px-7 sm:max-w-3xl lg:max-w-7xl">
             <div class="relative px-6 py-10 overflow-hidden shadow-xl bg-primary-500 rounded-2xl sm:px-12 sm:py-20">
                 <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
                     <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360" loading="lazy">
                         <path class="text-primary-600 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
-                        <path class="text-primary-600 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.687 870.4 1463 1120.086 0 647.086z" />
+                        <path class="text-primary-600 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
                     </svg>
                 </div>
-                <div class="text-center">
-                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                        {{ .Site.Params.CtaTitle }}
-                    </h2>
-                    <p class="mt-4 text-lg leading-7 text-white">
-                        {{ .Site.Params.CtaDescription }}
-                    </p>
-                    <div class="mt-8 flex justify-center">
-                        <a href="{{ .Site.Params.CtaLink }}" class="text-base font-semibold text-white hover:text-primary-200">
-                            {{ .Site.Params.CtaLinkText }}
-                        </a>
+                <div class="relative">
+                    <div class="flex flex-col items-center text-center">
+                        <h2 class="text-xl font-bold tracking-tight text-white sm:text-2xl">
+                            {{ .Site.Params.P5.Heading }}
+                        </h2>
+                        {{ range .Site.Params.P5.Content }}
+                        <p class="max-w-2xl mt-4 text-base text-primary-100">
+                            {{ .text }}
+                        </p>
+                        {{ end }}
+                
+                        <!-- Карта -->
+                        <div class="mt-6 w-full flex justify-center">
+                            <iframe src="https://yandex.ru/map-widget/v1/?z=15&ol=biz&oid=8044630477"
+                                width="100%" height="300" frameborder="0"
+                                style="max-width: 560px; border-radius: 30px;"></iframe>
+                        </div>
+                
+                        <!-- Кнопка -->
+                        <div class="mt-6">
+                            <a href="https://yandex.ru/maps/?ll=39.730917%2C43.577090&rtd=0&rtext=~43.577090%2C39.730917&rtt=auto&ruri=~&start_navigation=true&z=14&from=mapframe"
+                                target="_blank">
+                                <button type="button"
+                                    class="px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10">
+                                    Построить маршрут
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                
+    
+        {{ end }}
+    
+    </main>
     {{ end }}
-</main>
-{{ end }}
