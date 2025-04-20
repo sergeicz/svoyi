@@ -14,8 +14,7 @@ description: A test with @tailwindcss/typography & Prose
               <button type="button" class="px-5 py-3 font-bold text-center text-white bg-indigo-600 rounded-lg text-md sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">
                   Позвонить: +7 (999) 656-54-46
               </button>
-          </a>
-      </div>
+                    </div>
       <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-lg">
           <h3 class="text-xl font-bold text-gray-900 dark:text-white">Наши реквизиты</h3>
           <p class="mt-2 text-gray-700 dark:text-gray-300">
