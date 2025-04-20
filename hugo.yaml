@@ -97,7 +97,7 @@ menu:
   about:
     - identifier: services
       name: Услуги
-      url: /services/
+      url: /https://n320139.yclients.com/company/308233/personal/select-services?o=/
       weight: 10
     - identifier: team
       name: Команда
