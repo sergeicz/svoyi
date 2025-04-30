@@ -148,9 +148,6 @@ layout: "single"
   }
 </style>
 
-<!-- Кнопка переключения темы -->
-<button class="theme-toggle" onclick="toggleTheme()">Переключить тему</button>
-
 <!-- Контент -->
 <h1>
   барбершоп Свои <br>
