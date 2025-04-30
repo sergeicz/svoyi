@@ -94,6 +94,7 @@ menu:
       name: Контакты
       url: /contact/
       weight: 30
+
   about:
     - identifier: services
       name: Услуги
@@ -103,6 +104,10 @@ menu:
       name: Команда
       url: /team/
       weight: 20
+    - identifier: learn
+      name: Обучение
+      url: /learn/
+      weight: 30
   footer:
     - identifier: Политика конфиденциальности
       name: Политика конфиденциальности
