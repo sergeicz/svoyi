@@ -206,15 +206,3 @@ layout: "single"
   <a href="https://t.me/svoyi_sochi" class="btn-primary">Приступить к обучению</a>
 </div>
 
-<script>
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const savedTheme = localStorage.getItem('theme');
-  document.body.classList.add(savedTheme || (prefersDark ? 'dark' : 'light'));
-
-  function toggleTheme() {
-    const isDark = document.body.classList.contains('dark');
-    document.body.classList.toggle('dark', !isDark);
-    document.body.classList.toggle('light', isDark);
-    localStorage.setItem('theme', isDark ? 'light' : 'dark');
-  }
-</script>
