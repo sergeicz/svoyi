@@ -193,7 +193,7 @@ layout: "single"
 
 <div class="video-frame">
   <h3>Небольшое видео о нас</h3>
-  <video width="560" height="315" controls>
+  <video width="560" height="315" controls poster="https://svoyi.ru/images/tailbliss-cover.webp">
     <source src="/images/learn/vid_laern.webm" type="video/webm">
     Ваш браузер не поддерживает воспроизведение видео.
   </video>
