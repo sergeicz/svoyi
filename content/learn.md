@@ -200,6 +200,6 @@ layout: "single"
 </div>
 
 <div class="enroll-button">
-  <a href="https://t.me/svoyi_sochi" class="btn-primary">Приступить к обучению</a>
+  <a href="https://t.me/course_sv_bot" class="btn-primary">Приступить к обучению</a>
 </div>
 
