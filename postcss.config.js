@@ -1,6 +1,6 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    tailwindcss: {},  // Стандартный плагин для Tailwind v4
+    autoprefixer: {}
   }
 }

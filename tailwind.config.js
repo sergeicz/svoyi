@@ -1,15 +1,16 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-// tailwind.config.js
 module.exports = {
-  content: ['./layouts/**/*.html', './content/**/*.md'],
+  content: [
+    './layouts/**/*.html', 
+    './content/**/*.md',
+    './assets/js/**/*.js' // Добавлено для обработки JS-файлов
+  ],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        'primary': {
+        primary: {
           DEFAULT: '#6366F1',
           50: '#FFFFFF',
           100: '#F9F9FE',
@@ -22,7 +23,7 @@ module.exports = {
           800: '#0E119E',
           900: '#0A0C6A'
         },
-        'secondary': {
+        secondary: {
           DEFAULT: '#EC4899',
           50: '#FDEEF6',
           100: '#FBDCEB',
@@ -35,7 +36,7 @@ module.exports = {
           800: '#7F0D45',
           900: '#4C0829'
         },
-        'neutral': {
+        neutral: {
           DEFAULT: '#6B7280',
           50: '#CDD0D5',
           100: '#C2C5CC',
@@ -47,55 +48,40 @@ module.exports = {
           700: '#383C43',
           800: '#1E2024',
           900: '#050506'
-        },
-        // To change these, use https://www.tailwindshades.com/ with https://tailwindcss.com/docs/customizing-colors or create your own custom colors.
+        }
+      },
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans], // Пример добавления кастомного шрифта
       },
       lineHeight: {
         'extra-loose': '2.5',
         '12': '3rem',
       },
-      typography: (theme) => ({
+      typography: ({ theme }) => ({
         DEFAULT: {
           css: {
-            '--tw-prose-body': theme('colors.zinc[800]'),
-            '--tw-prose-headings': theme('colors.zinc[900]'),
-            '--tw-prose-lead': theme('colors.zinc[700]'),
-            '--tw-prose-links': theme('colors.zinc[900]'),
-            '--tw-prose-bold': theme('colors.zinc[900]'),
-            '--tw-prose-counters': theme('colors.zinc[600]'),
-            '--tw-prose-bullets': theme('colors.zinc[400]'),
-            '--tw-prose-hr': theme('colors.zinc[300]'),
-            '--tw-prose-quotes': theme('colors.zinc[900]'),
-            '--tw-prose-quote-borders': theme('colors.zinc[300]'),
-            '--tw-prose-captions': theme('colors.zinc[700]'),
-            '--tw-prose-code': theme('colors.indigo[500]'),
-            '--tw-prose-pre-code': theme('colors.indigo[300]'),
-            '--tw-prose-pre-bg': theme('colors.gray[900]'),
-            '--tw-prose-th-borders': theme('colors.zinc[300]'),
-            '--tw-prose-td-borders': theme('colors.zinc[200]'),
-            '--tw-prose-invert-body': theme('colors.zinc[200]'),
-            '--tw-prose-invert-headings': theme('colors.white'),
-            '--tw-prose-invert-lead': theme('colors.zinc[300]'),
-            '--tw-prose-invert-links': theme('colors.indigo[400]'),
-            '--tw-prose-invert-bold': theme('colors.white'),
-            '--tw-prose-invert-counters': theme('colors.zinc[400]'),
-            '--tw-prose-invert-bullets': theme('colors.zinc[200]'),
-            '--tw-prose-invert-hr': theme('colors.zinc[500]'),
-            '--tw-prose-invert-quotes': theme('colors.zinc[100]'),
-            '--tw-prose-invert-quote-borders': theme('colors.zinc[700]'),
-            '--tw-prose-invert-captions': theme('colors.zinc[400]'),
-            '--tw-prose-invert-code': theme('colors.indigo[400]'),
-            '--tw-prose-invert-pre-code': theme('colors.indigo[300]'),
-            '--tw-prose-invert-pre-bg': theme('colors.gray[900]'),
-            '--tw-prose-invert-th-borders': theme('colors.zinc[100]'),
-            '--tw-prose-invert-td-borders': theme('colors.zinc[500]'),
-          },
+            '--tw-prose-body': theme('colors.neutral.800'),
+            '--tw-prose-headings': theme('colors.neutral.900'),
+            '--tw-prose-links': theme('colors.primary.600'),
+            '--tw-prose-code': theme('colors.secondary.600'),
+            // Упрощенная версия остальных стилей typography
+            // Полный список можно найти в документации @tailwindcss/typography
+          }
         },
-      }),
-    },
+        dark: {
+          css: {
+            '--tw-prose-body': theme('colors.neutral.200'),
+            '--tw-prose-headings': theme('colors.white'),
+            '--tw-prose-links': theme('colors.primary.400'),
+            '--tw-prose-code': theme('colors.secondary.400'),
+          }
+        }
+      })
+    }
   },
-  variants: {
-    typography: ["dark"],
-  },
-  plugins: [require("@tailwindcss/typography")],
-};
+  plugins: [
+    require('@tailwindcss/typography')({
+      className: 'prose' // Добавляем явное указание класса
+    })
+  ]
+}
