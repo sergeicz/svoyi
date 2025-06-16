@@ -11,6 +11,7 @@
     "watch:hugo": "hugo server"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.10",
     "@tailwindcss/typography": "^0.5.16",
     "alpinejs": "^3.14.9",
     "autoprefixer": "^10.4.21",
