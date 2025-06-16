@@ -4,14 +4,14 @@
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.16",
     "alpinejs": "^3.14.9",
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.2",
-    "npm-force-resolutions": "^0.0.10",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "npm-force-resolutions": "^0.0.10"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
@@ -26,5 +26,28 @@
   "browserslist": [
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nusserstudios/tailbliss.git"
+  },
+  "keywords": [
+    "hugo",
+    "tailwind",
+    "tailwindcss",
+    "alpinejs",
+    "minimal",
+    "responsive",
+    "light mode",
+    "dark mode",
+    "hugo blog",
+    "categories",
+    "tags"
+  ],
+  "author": "NusserStudios",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nusserstudios/tailbliss/issues"
+  },
+  "homepage": "https://github.com/nusserstudios/tailbliss"
 }
