@@ -19,7 +19,7 @@
     "npm-force-resolutions": "^0.0.10",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.11"
   },
   "resolutions": {
     "next": "12.3.7"
