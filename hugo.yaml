@@ -1,4 +1,4 @@
-baseURL: 'https://svoyi.ru/'
+baseURL = "https://svoyi.netlify.app/
 title: Барбершоп СВОИ
 languageCode: ru
 DefaultContentLanguage: ru
