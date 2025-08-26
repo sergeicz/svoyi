@@ -1,19 +1,20 @@
 [build]
-  # Директория, куда Hugo собирает сайт
+  # Папка со сгенерированным Hugo-сайтом
   publish = "public"
-  # Команда сборки
+  # Команда сборки Hugo
   command = "hugo --gc --minify"
 
 [build.environment]
-  # Версия Node.js (подходит для Hugo + PostCSS)
+  # Версия Node.js (для PostCSS и плагинов)
   NODE_VERSION = "22"
-  # Отключаем frozen-lockfile для pnpm
+  # Исправляем ошибку с lockfile при pnpm install
   PNPM_FLAGS = "--no-frozen-lockfile"
   NPM_FLAGS = "--no-frozen-lockfile"
-  # Версия Hugo (Extended)
+  # Версия Hugo Extended
   HUGO_VERSION = "0.148.2"
   HUGO_ENV = "production"
 
+# === Контексты деплоя ===
 [context.production.environment]
   HUGO_ENV = "production"
 
@@ -22,3 +23,16 @@
 
 [context.branch-deploy.environment]
   HUGO_ENV = "development"
+
+# === Настройки ветки для автодеплоя ===
+[build.branch]
+  # Автодеплой только из main
+  main = { publish = "public", command = "hugo --gc --minify" }
+
+# === Домен ===
+# Укажи свой кастомный домен (замени example.com на свой)
+[[redirects]]
+  from = "https://svoyi.netlify.app/*"
+  to = "https://example.com/:splat"
+  status = 301
+  force = true
