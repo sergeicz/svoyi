@@ -29,10 +29,4 @@
   # Автодеплой только из main
   main = { publish = "public", command = "hugo --gc --minify" }
 
-# === Домен ===
-# Укажи свой кастомный домен (замени example.com на свой)
-[[redirects]]
-  from = "https://svoyi.netlify.app/*"
-  to = "https://example.com/:splat"
-  status = 301
-  force = true
+
